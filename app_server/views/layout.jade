@@ -3,8 +3,13 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='./html5up-dimension/assets/css/main.css')
+    link(href='../html5up-dimension/assets/css/main.css', rel='stylesheet')
+    link(href='../html5up-dimension/assets/css/noscript.css', rel='stylesheet')
+    link(href='../html5up-dimension/assets/css/font-awesome.min.css', rel='stylesheet')
+    link(href='../html5up-dimension/assets/css/ie9.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/style.css')    
   body
-   h1: Day Planner
-   h2: Created by: Natasha, Madison, Karena, Angelica
+    block content
+    h2 Day Planner
+    h2 Created by: Natasha, Madison, Karena, Angelica
          
