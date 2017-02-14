@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+//var template = require('skel.min');
 
 var index = require('./app_server/routes/home');
 var users = require('./app_server/routes/users');
