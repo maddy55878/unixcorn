@@ -3,8 +3,28 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='./html5up-dimension/assets/css/main.css')
+    link(rel='stylesheet', href='/bootstrap/assets/css/main.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
   body
-   h1: Day Planner
-   h2: Created by: Natasha, Madison, Karena, Angelica
-         
+    
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/assets/js/jquery.min.js')
+    
+    h1: Day Planner
+    h2: Created by: Natasha, Madison, Karena, Angelica
+    //button(type='button' onclick='location.href = planner';) Let's Get Started!
+    
+    button(type='button' onclick="location.href='/'") Home
+
+
+    button(type='button' onclick="location.href='/planner'") Planner
+    
+    
+    .container
+        block content
+    
+
+    
+    
+    
+    

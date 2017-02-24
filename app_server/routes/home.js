@@ -10,7 +10,9 @@ var ctrlMain = require('../controllers/main'); //one up in dir, controllers, the
 //    .get(ctrlMain.index);
 
 // or     
-router.get('/', ctrlMain.home);
+router.get('/', ctrlMain.layout);
+
+router.get('/planner', ctrlMain.planner);
 
 //testing route 
 //router.get('/testing', ctrlMain.testing);
