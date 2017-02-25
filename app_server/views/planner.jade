@@ -8,6 +8,16 @@ block content
       doctype html
       html
         head
+        
+        
+            p Input your price range below
+            button(type='button') Cheap
+            button(type='button') Less Cheap
+            button(type='button') Expensive
+            p Distance you're able to travel
+            input#myRange(type='range', value='90')
+            
+                
           style.
             /* The Modal (background) */
             .modal {
@@ -53,7 +63,7 @@ block content
             // Modal content
             .modal-content
               span.close ×
-              p Some text in the Modal..
+              p Planner Result
 
           script.
             // Get the modal

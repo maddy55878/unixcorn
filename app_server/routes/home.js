@@ -13,6 +13,8 @@ var ctrlMain = require('../controllers/main'); //one up in dir, controllers, the
 router.get('/', ctrlMain.layout);
 
 router.get('/planner', ctrlMain.planner);
+router.get('/about', ctrlMain.about);
+router.get('/contact', ctrlMain.contact);
 
 //testing route 
 //router.get('/testing', ctrlMain.testing);
