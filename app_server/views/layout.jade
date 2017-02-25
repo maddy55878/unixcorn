@@ -9,10 +9,11 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     noscript
        link(rel='stylesheet', href='/bootstrap/css/noscript.css')
+    //div(style='background-image: url(/bootstrap/images/overlaypng);')
+
   body
-    
-    
-        // Wrapper
+    div(style='background-image: url(/images/overlaypng);')
+        // Wrapper .backImg
     #wrapper
       // Header
       header#header
@@ -40,9 +41,9 @@ html
               a(href='/about') About
             li
               a(href='/contact') Contact
+        
       
         block content
-      
 
       // Footer
       footer#footer
@@ -58,3 +59,4 @@ html
   script(src='/public/bootstrap/js/skel.min.js')
   script(src='/public/bootstrap/js/util.js')
   script(src='/public/bootstrap/js/main.js')
+//   style.body{background-image: url(/public/bootstrap/images/overlay.png);}
