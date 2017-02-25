@@ -9,15 +9,17 @@ block content
       html
         head
         
-        
             p Input your price range below
-            button(type='button') Cheap
-            button(type='button') Less Cheap
-            button(type='button') Expensive
+            nav
+              ul
+                li
+                   button(type='button') Cheap
+                li
+                  button(type='button') Less Cheap
+                li
+                   button(type='button') Expensive
             p Distance you're able to travel
             input#myRange(type='range', value='90')
-            
-                
           style.
             /* The Modal (background) */
             .modal {
@@ -55,9 +57,9 @@ block content
             cursor: pointer;
             }
         body
-          h2 Modal Example
+          h2 Results
           // Trigger/Open The Modal
-          button#myBtn Open Modal
+          button#myBtn Check Your Results
           // The Modal
           #myModal.modal
             // Modal content
