@@ -8,16 +8,21 @@ block content
       doctype html
       html
         head
-        
             p Input your price range below
             nav
-              ul
-                li
-                   button(type='button') Cheap
-                li
-                  button(type='button') Less Cheap
-                li
-                   button(type='button') Expensive
+            .radio
+              label
+                input(type='radio', name='optradio1', checked='')
+                | Cheap: $15 and under
+            .radio
+              label
+                input(type='radio', name='optradio2', checked='')
+                | Less Cheap: $16-$30
+            .radio
+              label
+                input(type='radio', name='optradio3', checked='')
+                | Expensive: $30+ 
+
             p Distance you're able to travel
             input#myRange(type='range', value='90')
           style.
