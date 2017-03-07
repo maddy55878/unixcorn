@@ -445,7 +445,8 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"] {
+	input[type="radio"]
+	.radio{
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -459,13 +460,14 @@
 	}
 
 		input[type="checkbox"] + label,
-		input[type="radio"] + label {
+		input[type="radio"] + label 
+		.radio{
 			text-decoration: none;
 			-moz-user-select: none;
 			-webkit-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
-			color: #841957;
+			color: #ffffff;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.8rem;
@@ -477,7 +479,8 @@
 		}
 
 			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="radio"] + label:before 
+			.radio{
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				font-family: FontAwesome;
@@ -487,7 +490,8 @@
 			}
 
 			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
+			input[type="radio"] + label:before 
+			.radio{
 				-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -506,7 +510,8 @@
 			}
 
 		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
+		input[type="radio"]:checked + label:before 
+		.radio{
 			background: #ffffff !important;
 			border-color: #ffffff !important;
 			color: #1b1f22;
@@ -514,7 +519,8 @@
 		}
 
 		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
+		input[type="radio"]:focus + label:before 
+		.radio{
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 			box-shadow: 0 0 0 1px #ffffff;
@@ -524,7 +530,8 @@
 		border-radius: 4px;
 	}
 
-	input[type="radio"] + label:before {
+	input[type="radio"] + label:before 
+	.radio{
 		border-radius: 100%;
 	}
 
