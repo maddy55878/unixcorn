@@ -9,22 +9,18 @@ block content
       html
         head
             p Input your price range below
+              label.radio-inline
+              input(type='radio', name='optradio')
+              | Cheap: $15 and under 
+              label.radio-inline
+              input(type='radio', name='optradio')
+              | Less Cheap: $16-30
+              label.radio-inline
+              input(type='radio', name='optradio')
+              | Expensive: $30+
             nav
-            .radio
-              label
-                input(type='radio', name='optradio1')
-                | Cheap: $15 and under
-            .radio
-              label
-                input(type='radio', name='optradio2')
-                | Less Cheap: $16-$30
-            .radio
-              label
-                input(type='radio', name='optradio3')
-                | Expensive: $30+ 
-
-            p Distance you're able to travel
-            input#myRange(type='range', value='90')
+              p Distance you're able to travel
+              input#myRange(type='range', value='90')
           style.
             /* The Modal (background) */
             .modal {
