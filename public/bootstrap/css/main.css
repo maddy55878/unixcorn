@@ -443,6 +443,10 @@
 	textarea {
 		padding: 0.75rem 1rem;
 	}
+	
+	.radios {
+			display: inline-block;
+		}
 
 	input[type="checkbox"],
 	input[type="radio"]
@@ -461,7 +465,7 @@
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label 
-		.radio{
+		{
 			text-decoration: none;
 			-moz-user-select: none;
 			-webkit-user-select: none;
@@ -469,7 +473,7 @@
 			user-select: none;
 			color: #ffffff;
 			cursor: pointer;
-			display: inline-block;
+			display: inline;
 			font-size: 0.8rem;
 			font-weight: 300;
 			margin: 0 0 0.5rem 0;
@@ -499,7 +503,7 @@
 				border-radius: 4px;
 				border: solid 1px #ffffff;
 				content: '';
-				display: inline-block;
+				display: inline;
 				height: 1.65rem;
 				left: 0;
 				line-height: calc(1.58125rem + 0em);
@@ -511,7 +515,8 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before 
-		.radio{
+		.radio
+		{
 			background: #ffffff !important;
 			border-color: #ffffff !important;
 			color: #1b1f22;
@@ -519,19 +524,20 @@
 		}
 
 		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before 
-		.radio{
+		input[type="radio"]:focus + label:before
+		{
 			background: rgba(255, 255, 255, 0.075);
 			border-color: #ffffff;
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
-	input[type="checkbox"] + label:before {
-		border-radius: 4px;
+	input[type="checkbox"] + label:before 
+	{
+		border-radius: 0px;
 	}
 
 	input[type="radio"] + label:before 
-	.radio{
+	{
 		border-radius: 100%;
 	}
 
@@ -1604,3 +1610,4 @@
 		.backImg {
   			  background-image: url((/bootstrap/images/overlay.png);
 		}
+		
