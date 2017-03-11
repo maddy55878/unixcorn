@@ -10,13 +10,13 @@ block content
         head
             p Input your price range below
               label.radio-inline
-              input(type='radio', name='optradio')
+              input(type='radio', name='optradio', id='opr1')
               | Cheap: $15 and under 
               label.radio-inline
-              input(type='radio', name='optradio')
+              input(type='radio', name='optradio', id='opr2')
               | Less Cheap: $16-30
               label.radio-inline
-              input(type='radio', name='optradio')
+              input(type='radio', name='optradio', id='opr3')
               | Expensive: $30+
             nav
               p Distance you're able to travel
@@ -66,29 +66,44 @@ block content
             // Modal content
             .modal-content
               span.close ×
-              //p Planner Result
-
-          script.
+              // p.pie 
+              // p#pie 
+              #test1  
+        script.
             // Get the modal
             var modal = document.getElementById('myModal');
+            var test12 = document.getElementById("test1");
             // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
+            // var radi= document.getElementById("optradio1");
+            // var radi2= document.getElementById("opr1");
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
+           
             // When the user clicks the button, open the modal
             btn.onclick = function() {
             modal.style.display = "block";
+              if(document.getElementById("opr1").checked){
+                  test12.innerHTML = "hate";
+                }else if (document.getElementById("opr2").checked){
+                   test12.innerHTML = "love";
+                }else{
+                  test12.innerHTML = "i feel nothing";
+                }
+              //test12.innerHTML = "death";
+              //test12 = "hi";  modal.document.write(test12);
             }
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
-            modal.style.display = "hi";
+              modal.style.display = "none";
             }
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
             if (event.target == modal) {
-            modal.style.display = "hi";
+            modal.style.display = "none";
+            //test12 = "hi";
+            //modal.document.write(test12);
             }
             }
-
-
-
+  // script(language='JavaScript' src='/public/javascripts/results.js')
+  // script(language='JavaScript'  src='/public/bootstrap/js/results.js')
