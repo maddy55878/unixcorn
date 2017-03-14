@@ -1,6 +1,7 @@
 doctype html
-html
+html(ng-app='resultsJS')
   head
+    script(src='/public/javascripts/results.min.js')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     link(rel='stylesheet', href='/bootstrap/css/main.css')
@@ -11,7 +12,7 @@ html
        link(rel='stylesheet', href='/bootstrap/css/noscript.css')
     //div(style='background-image: url(/bootstrap/images/overlaypng);')
 
-  body
+  body(ng-controller='resultsControl')
     div(style='background-image: url(/images/overlaypng);')
         // Wrapper .backImg
     #wrapper
@@ -23,12 +24,8 @@ html
           .inner
             h1 Planner
             p
-              // [
-              | A Day Planner That is awesome
-              br
-              // [
-              | And Happy 
-              | By Unixcorn
+                | A Day Planner That is awesome
+          
              //  Originally from a(href='https://html5up.net') HTML5 UP
              //a(href='https://html5up.net/license') Creative Commons liscense
         nav
@@ -59,4 +56,5 @@ html
   script(src='/public/bootstrap/js/skel.min.js')
   script(src='/public/bootstrap/js/util.js')
   script(src='/public/bootstrap/js/main.js')
+  script(src='/public/javascripts/results.min.js')
 //   style.body{background-image: url(/public/bootstrap/images/overlay.png);}

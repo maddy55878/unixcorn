@@ -21,6 +21,10 @@ block content
             nav
               p Distance you're able to travel
               input#myRange(type='range', value='90')
+              
+            nav 
+              p Time Range
+              
           style.
             /* The Modal (background) */
             .modal {
@@ -84,11 +88,11 @@ block content
             btn.onclick = function() {
             modal.style.display = "block";
               if(document.getElementById("opr1").checked){
-                  test12.innerHTML = "hate";
+                  test12.innerHTML = "You are cheap";
                 }else if (document.getElementById("opr2").checked){
-                   test12.innerHTML = "love";
+                   test12.innerHTML = "You are just right";
                 }else{
-                  test12.innerHTML = "i feel nothing";
+                  test12.innerHTML = "You are expensive";
                 }
               //test12.innerHTML = "death";
               //test12 = "hi";  modal.document.write(test12);
@@ -101,8 +105,6 @@ block content
             window.onclick = function(event) {
             if (event.target == modal) {
             modal.style.display = "none";
-            //test12 = "hi";
-            //modal.document.write(test12);
             }
             }
   // script(language='JavaScript' src='/public/javascripts/results.js')
