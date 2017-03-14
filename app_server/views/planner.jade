@@ -21,13 +21,13 @@ block content
             nav
               p Distance you're able to travel
                label.radio-inline
-              input(type='radio', name='optradio2')
+              input(type='radio', name='optradio2', id='disopr1')
               | Walking Distance: under a mile  
               label.radio-inline
-              input(type='radio', name='optradio2')
+              input(type='radio', name='optradio2', , id='disopr2')
               | A Short Drive: under 25 miles 
               label.radio-inline
-              input(type='radio', name='optradio2')
+              input(type='radio', name='optradio2', , id='disopr3')
               | Road Trip: 25+ miles 
           style.
             /* The Modal (background) */
@@ -92,11 +92,29 @@ block content
             btn.onclick = function() {
             modal.style.display = "block";
               if(document.getElementById("opr1").checked){
-                  test12.innerHTML = "You are cheap";
+                  if(document.getElementById("disopr1").checked){
+                    test12.innerHTML = "Looking for cheap activities in a short walk";
+                  }else if(document.getElementById("disopr2").checked){
+                     test12.innerHTML = "Looking for cheap activities in a short drive";
+                  }else{
+                     test12.innerHTML = "Looking for cheap activities in a long drive";
+                  }
                 }else if (document.getElementById("opr2").checked){
-                   test12.innerHTML = "You are just right";
+                     if(document.getElementById("disopr1").checked){
+                         test12.innerHTML = "Looking for resonable priced activities in a short walk";
+                      }else if(document.getElementById("disopr2").checked){
+                         test12.innerHTML = "Looking for resonable priced activities in a short drive";
+                      }else{
+                         test12.innerHTML = "Looking for resonable priced activities in a long drive";
+                    }
                 }else{
-                  test12.innerHTML = "You are expensive";
+                  if(document.getElementById("disopr1").checked){
+                         test12.innerHTML = "Looking for expensive activities in a short walk";
+                      }else if(document.getElementById("disopr2").checked){
+                         test12.innerHTML = "Looking for expensive activities in a short drive";
+                      }else{
+                         test12.innerHTML = "Looking for expensive activities in a long drive";
+                    }
                 }
               //test12.innerHTML = "death";
               //test12 = "hi";  modal.document.write(test12);
