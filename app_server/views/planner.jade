@@ -20,7 +20,15 @@ block content
               | Expensive: $30+
             nav
               p Distance you're able to travel
-              input#myRange(type='range', value='90')
+               label.radio-inline
+              input(type='radio', name='optradio2')
+              | Walking Distance: under a mile  
+              label.radio-inline
+              input(type='radio', name='optradio2')
+              | A Short Drive: under 25 miles 
+              label.radio-inline
+              input(type='radio', name='optradio2')
+              | Road Trip: 25+ miles 
           style.
             /* The Modal (background) */
             .modal {
