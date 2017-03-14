@@ -1,0 +1,1 @@
+[{ "_id" : { "$oid" : "58c77228403f0c18af689874" }, "name" : "Museum" },{ "_id" : { "$oid" : "58c77232403f0c18af689875" }, "name" : "Cafe" },{ "_id" : { "$oid" : "58c7723a403f0c18af689876" }, "name" : "Movies" }]
