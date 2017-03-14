@@ -12,11 +12,4 @@ var activityResultsSchema = new mongoose.Schema({
    time: String
 }); 
 
-// var activityResults2Schema = new mongoose.Schema({ 
-//    name: String
-// }); 
-
-
-// mongoose.model('activityResults2', activityResults2Schema);
-
 mongoose.model('activityResults', activityResultsSchema, 'activityResults');
