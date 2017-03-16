@@ -595,15 +595,15 @@
 			padding: 0;
 		}
 
-/* Icon */
+/* glyphicon */
 
-	.icon {
+	.glyphicon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
 	}
 
-		.icon:before {
+		.glyphicon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -612,7 +612,7 @@
 			text-transform: none !important;
 		}
 
-		.icon > .label {
+		.glyphicon > .label {
 			display: none;
 		}
 
@@ -741,22 +741,22 @@
 					padding-top: 0;
 				}
 
-		ul.icons {
+		ul.glyphicons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 		}
 
-			ul.icons li {
+			ul.glyphicons li {
 				display: inline-block;
 				padding: 0 0.75em 0 0;
 			}
 
-				ul.icons li:last-child {
+				ul.glyphicons li:last-child {
 					padding-right: 0;
 				}
 
-				ul.icons li a {
+				ul.glyphicons li a {
 					border-radius: 100%;
 					box-shadow: inset 0 0 0 1px #ffffff;
 					display: inline-block;
@@ -766,12 +766,12 @@
 					width: 2.25rem;
 				}
 
-					ul.icons li a:hover {
+					ul.glyphicons li a:hover {
 					/*	background-color: rgba(255, 255, 255, 0.075);*/
 						   background-color: #800000;
 					}
 
-					ul.icons li a:active {
+					ul.glyphicons li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
@@ -864,7 +864,7 @@
 							margin: 0 !important;
 						}
 
-							ul.actions li > *.icon:before {
+							ul.actions li > *.glyphicon:before {
 								margin-left: -2em;
 							}
 
@@ -1011,11 +1011,11 @@
 			background-color: rgba(255, 255, 255, 0.175);
 		}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="submit"].glyphicon:before,
+		input[type="reset"].glyphicon:before,
+		input[type="button"].glyphicon:before,
+		button.glyphicon:before,
+		.button.glyphicon:before {
 			margin-right: 0.5em;
 		}
 
@@ -1261,7 +1261,7 @@
 			border-radius: 100%;
 		}
 
-			#header .logo .icon:before {
+			#header .logo .glyphicon:before {
 				font-size: 2rem;
 			}
 
@@ -1409,7 +1409,7 @@
 				line-height: 4.75rem;
 			}
 
-				#header .logo .icon:before {
+				#header .logo .glyphicon:before {
 					font-size: 1.75rem;
 				}
 
