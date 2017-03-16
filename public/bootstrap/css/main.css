@@ -16,7 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		background-image: url('starBG.jpg'); 
+		background-image: url(''); 
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -140,6 +140,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
+			   background-color: #800000;
 		}
 
 	strong, b {
@@ -155,7 +156,7 @@
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1{
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
@@ -163,7 +164,14 @@
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
 	}
-
+	h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+	
+		letter-spacing: 0.2rem;
+	}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -622,7 +630,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-image: url('starBG.jpg');
+			background-image: url('starBG.jpg'); /*important background*/
 			/*background-color: rgba(19, 21, 25, 0.5);*/
 			border-radius: 4px;
 			content: '';
@@ -759,7 +767,8 @@
 				}
 
 					ul.icons li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+					/*	background-color: rgba(255, 255, 255, 0.075);*/
+						   background-color: #800000;
 					}
 
 					ul.icons li a:active {
