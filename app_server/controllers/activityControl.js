@@ -43,7 +43,7 @@ module.exports.findResults2 = function(req, res){
 };
 
 module.exports.findIdResults2 = function(req, res){
-      activityResults2.findById(req.params.activityId)
+      activityResults2.findById(req.params.activityId2)
     .exec(function(err, data) {
       sendJSONresponse(res, 200, data);
     });
@@ -65,13 +65,13 @@ var sendJSONresponse = function(res, status, content){
 };
 
 module.exports.findUserInputs = function(req, res){
-    userInputs.findOne({name:req.params.name}).exec(function(err,data){
+    userInputs.findOne({name:req.params.userInputsId}).exec(function(err,data){
         sendJSONresponse(res,200, data);
     });
 };
 
 module.exports.findIdUserInputs = function(req, res){
-      userInputs.findById(req.params.activityId)
+      userInputs.findById(req.params.userInputsId)
     .exec(function(err, data) {
       sendJSONresponse(res, 200, data);
     });
