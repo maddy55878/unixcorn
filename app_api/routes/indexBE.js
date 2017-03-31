@@ -1,15 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/main'); //one up in dir, controllers, then main
-var ctrlActivity = require('../controllers/activityControl');
+var ctrlMain = require('../app_server/controllers/main'); //one up in dir, controllers, then main
+var ctrlActivity = require('../../controllers/activityControl');
+//var serverHome = require('/app_server/routes/home'); 
 
-router.get('/', ctrlMain.layout);
-router.get('/planner', ctrlMain.planner);
-router.get('/about', ctrlMain.about);
-router.get('/contact', ctrlMain.contact);
-router.get('/events', ctrlMain.events);
-router.get('/events/login',  ctrlMain.login);
-router.get('/events/signup', ctrlMain.signup);
+// router.get('/', ctrlMain.layout);
+// router.get('/planner', ctrlMain.planner);
+// router.get('/about', ctrlMain.about);
+// router.get('/contact', ctrlMain.contact);
+// router.get('/events', ctrlMain.events);
+// router.get('/events/login',  ctrlMain.login);
+// router.get('/events/signup', ctrlMain.signup);
 
 //Schemas
 router.get('/activityResults/:name', ctrlActivity.findResults);

@@ -1,0 +1,62 @@
+doctype html
+html(ng-app='resultsJS')
+  head
+    script(src='/public/javascripts/results.min.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/main.css')
+    link(rel='stylesheet', href='/bootstrap/css/ie9.css')
+    link(rel='stylesheet', href='/bootstrap/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    noscript
+       link(rel='stylesheet', href='/bootstrap/css/noscript.css')
+    //div(style='background-image: url(/bootstrap/images/overlaypng);')
+
+  body(ng-controller='resultsControl')
+    div(style='background-image: url(/images/overlaypng);')
+        // Wrapper .backImg
+    #wrapper
+      // Header
+      header#header
+        .logo
+          span.icon.fa-diamond
+        .content
+          .inner
+            h1 Planner
+            p
+                | Plan Your Perfect Day
+          
+             //  Originally from a(href='https://html5up.net') HTML5 UP
+             //a(href='https://html5up.net/license') Creative Commons liscense
+        nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='/planner') Planner
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+            li
+              a(href='/events') Login/Sign Up
+        
+      
+        block content
+
+      // Footer
+      footer#footer
+        p.copyright
+          | © Untitled. Design: 
+          a(href='https://html5up.net') HTML5 UP
+          | .
+  // BG
+  #bg
+    
+  // Scripts
+  //script(src='/js/jquery.min.js')
+  script(src='/public/bootstrap/js/skel.min.js')
+  script(src='/public/bootstrap/js/util.js')
+  script(src='/public/bootstrap/js/main.js')
+  script(src='/public/javascripts/results.min.js')
+//   style.body{background-image: url(/public/bootstrap/images/overlay.png);}
