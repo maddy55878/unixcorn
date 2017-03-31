@@ -16,7 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-	/*	background-image: url(/public/bootstrap/images/overlay.png); */
+		background-image: url(''); 
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -140,6 +140,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
+			   background-color: #800000;
 		}
 
 	strong, b {
@@ -155,7 +156,7 @@
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1{
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
@@ -163,7 +164,14 @@
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
 	}
-
+	h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+	
+		letter-spacing: 0.2rem;
+	}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -587,15 +595,15 @@
 			padding: 0;
 		}
 
-/* Icon */
+/* glyphicon */
 
-	.icon {
+	.glyphicon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
 	}
 
-		.icon:before {
+		.glyphicon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -604,7 +612,7 @@
 			text-transform: none !important;
 		}
 
-		.icon > .label {
+		.glyphicon > .label {
 			display: none;
 		}
 
@@ -622,8 +630,8 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-image: url("/public/bootstrap/images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			background-image: url('starBG.jpg'); /*important background*/
+			/*background-color: rgba(19, 21, 25, 0.5);*/
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -733,22 +741,22 @@
 					padding-top: 0;
 				}
 
-		ul.icons {
+		ul.glyphicons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 		}
 
-			ul.icons li {
+			ul.glyphicons li {
 				display: inline-block;
 				padding: 0 0.75em 0 0;
 			}
 
-				ul.icons li:last-child {
+				ul.glyphicons li:last-child {
 					padding-right: 0;
 				}
 
-				ul.icons li a {
+				ul.glyphicons li a {
 					border-radius: 100%;
 					box-shadow: inset 0 0 0 1px #ffffff;
 					display: inline-block;
@@ -758,11 +766,12 @@
 					width: 2.25rem;
 				}
 
-					ul.icons li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+					ul.glyphicons li a:hover {
+					/*	background-color: rgba(255, 255, 255, 0.075);*/
+						   background-color: #800000;
 					}
 
-					ul.icons li a:active {
+					ul.glyphicons li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
@@ -855,7 +864,7 @@
 							margin: 0 !important;
 						}
 
-							ul.actions li > *.icon:before {
+							ul.actions li > *.glyphicon:before {
 								margin-left: -2em;
 							}
 
@@ -1002,11 +1011,11 @@
 			background-color: rgba(255, 255, 255, 0.175);
 		}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="submit"].glyphicon:before,
+		input[type="reset"].glyphicon:before,
+		input[type="button"].glyphicon:before,
+		button.glyphicon:before,
+		.button.glyphicon:before {
 			margin-right: 0.5em;
 		}
 
@@ -1080,6 +1089,8 @@
 			height: 100%;
 		}
 
+
+/* ***this might not be right*****  */
 		#bg:before {
 			-moz-transition: background-color 2.5s ease-in-out;
 			-webkit-transition: background-color 2.5s ease-in-out;
@@ -1089,12 +1100,17 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url('images/starBG.jpg');
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
+
+
+/* ***this might also be troubling *** */
+
+
 
 		#bg:after {
 			-moz-transform: scale(1.125);
@@ -1105,7 +1121,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url('starBG.jpg');
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1245,7 +1261,7 @@
 			border-radius: 100%;
 		}
 
-			#header .logo .icon:before {
+			#header .logo .glyphicon:before {
 				font-size: 2rem;
 			}
 
@@ -1393,7 +1409,7 @@
 				line-height: 4.75rem;
 			}
 
-				#header .logo .icon:before {
+				#header .logo .glyphicon:before {
 					font-size: 1.75rem;
 				}
 
@@ -1534,6 +1550,7 @@
 					border-radius: 100%;
 					background-position: center;
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
@@ -1608,6 +1625,6 @@
 		}
 		
 		.backImg {
-  			  background-image: url((/bootstrap/images/overlay.png);
+  			  background-image: url('starBG.jpg');
 		}
 		
