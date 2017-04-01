@@ -29,6 +29,34 @@ block content
               label.radio-inline
               input(type='radio', name='optradio2', , id='disopr3')
               | Road Trip: 25+ miles 
+            nav
+              p Minimum Length of Activity
+          
+                input(type='text', name='minimum', id= 'min')
+                 
+         
+              p Maximum Length of Activity
+              
+                input(type='text', name='maximum', id= 'max')
+                 
+            nav 
+              p Time Activity Begins
+              
+                input(type='text', name='begin', id= 'begin')
+                
+
+              
+              p Time Activity Ends by
+              
+                input(type='text', name='end', id= 'end')
+            nav
+                .dropdown
+                button.dropbtn(onclick='myFunction()', id='beginTime') Travel By:
+                #myDropdown.dropdown-content
+                    a(href='#') Walking
+                    a(href='#') Bus
+                    a(href='#') Car
+                    a(href='#') Bike
           style.
             /* The Modal (background) */
             .modal {
@@ -77,14 +105,12 @@ block content
               // p.pie 
               // p#pie 
               #test1  
-        script.
+         script.
             // Get the modal
             var modal = document.getElementById('myModal');
             var test12 = document.getElementById("test1");
             // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
-            // var radi= document.getElementById("optradio1");
-            // var radi2= document.getElementById("opr1");
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
            
@@ -127,5 +153,23 @@ block content
                 modal.style.display = "none";
               }
             }
+              function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              // Close the dropdown menu if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+              
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
   // script(language='JavaScript' src='/public/javascripts/results.js')
   // script(language='JavaScript'  src='/public/bootstrap/js/results.js')
